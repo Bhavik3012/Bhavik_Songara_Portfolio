@@ -10,11 +10,18 @@ import type { NavItem } from "@/types/portfolio";
 
 type NavbarProps = {
   items: NavItem[];
+  name: string;
 };
 
-export function Navbar({ items }: NavbarProps) {
+export function Navbar({ items, name }: NavbarProps) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState(items[0]?.href.slice(1) ?? "");
+  const initials = name
+    .split(" ")
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0]?.toUpperCase())
+    .join("");
 
   const handleSectionChange = useEffectEvent((id: string) => {
     startTransition(() => setActiveSection(id));
@@ -52,10 +59,10 @@ export function Navbar({ items }: NavbarProps) {
       <Container className="flex min-h-20 items-center justify-between gap-6">
         <Link href="#top" className="flex items-center gap-3 font-semibold text-[var(--color-text)]">
           <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[linear-gradient(135deg,var(--color-primary),#7db4ff)] text-sm font-bold text-white shadow-[0_18px_30px_rgba(16,88,255,0.26)]">
-            AC
+            {initials}
           </span>
           <span className="hidden text-sm tracking-[0.16em] text-[var(--color-muted)] sm:inline">
-            Freelance Frontend
+            {name}
           </span>
         </Link>
 

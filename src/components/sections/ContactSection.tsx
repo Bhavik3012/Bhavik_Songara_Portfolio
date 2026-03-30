@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-import { ContactForm } from "@/components/sections/ContactForm";
 import { Container } from "@/components/ui/Container";
 import { Pill } from "@/components/ui/Pill";
 import { Reveal } from "@/components/ui/Reveal";
@@ -8,11 +7,16 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import type { ContactDetails, SocialLink } from "@/types/portfolio";
 
 type ContactSectionProps = {
+  name: string;
   contact: ContactDetails;
   socials: SocialLink[];
 };
 
-export function ContactSection({ contact, socials }: ContactSectionProps) {
+export function ContactSection({
+  name,
+  contact,
+  socials,
+}: ContactSectionProps) {
   return (
     <section id="contact" data-section className="section-anchor py-24">
       <Container>
@@ -20,7 +24,7 @@ export function ContactSection({ contact, socials }: ContactSectionProps) {
           <Reveal className="space-y-8">
             <SectionHeading
               eyebrow="Contact"
-              title="Ready to make your site feel more credible and conversion-focused?"
+              title="Let's build something useful."
               description={contact.intro}
             />
 
@@ -53,8 +57,48 @@ export function ContactSection({ contact, socials }: ContactSectionProps) {
             </div>
           </Reveal>
 
-          <Reveal delay={120} className="rounded-[1.75rem] border border-[var(--color-line)] bg-white/88 p-6">
-            <ContactForm email={contact.email} subjectPrefix={contact.subjectPrefix} />
+          <Reveal
+            delay={120}
+            className="rounded-[1.75rem] border border-[var(--color-line)] bg-white/88 p-6"
+          >
+            <div className="space-y-5">
+              <div className="rounded-[1.5rem] border border-[var(--color-line)] bg-[var(--color-primary-soft)]/55 px-5 py-4">
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--color-primary)]">
+                  Contact details
+                </p>
+              </div>
+
+              <div className="rounded-[1.5rem] border border-[var(--color-line)] bg-white px-5 py-4">
+                <p className="text-xs font-medium uppercase tracking-[0.18em] text-[var(--color-muted)]">
+                  Name
+                </p>
+                <p className="mt-2 text-lg font-semibold text-[var(--color-text)]">{name}</p>
+              </div>
+
+              <div className="rounded-[1.5rem] border border-[var(--color-line)] bg-white px-5 py-4">
+                <p className="text-xs font-medium uppercase tracking-[0.18em] text-[var(--color-muted)]">
+                  Phone
+                </p>
+                <a
+                  href={`tel:${contact.phone.replace(/\s+/g, "")}`}
+                  className="mt-2 inline-block text-lg font-semibold text-[var(--color-text)] transition hover:text-[var(--color-primary)]"
+                >
+                  {contact.phone}
+                </a>
+              </div>
+
+              <div className="rounded-[1.5rem] border border-[var(--color-line)] bg-white px-5 py-4">
+                <p className="text-xs font-medium uppercase tracking-[0.18em] text-[var(--color-muted)]">
+                  Email
+                </p>
+                <a
+                  href={`mailto:${contact.email}`}
+                  className="mt-2 inline-block text-lg font-semibold text-[var(--color-text)] transition hover:text-[var(--color-primary)]"
+                >
+                  {contact.email}
+                </a>
+              </div>
+            </div>
           </Reveal>
         </div>
       </Container>

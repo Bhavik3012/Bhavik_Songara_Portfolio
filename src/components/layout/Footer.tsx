@@ -16,7 +16,7 @@ export function Footer({ name, navItems, socials }: FooterProps) {
         <div>
           <p className="text-lg font-semibold text-[var(--color-text)]">{name}</p>
           <p className="mt-2 max-w-md text-sm leading-7 text-[var(--color-muted)]">
-            Designed to be easy to customize: update the data file, swap your assets, and deploy to Vercel.
+            AI automation, websites, and applications built with clean, modern execution.
           </p>
         </div>
 
@@ -41,9 +41,7 @@ export function Footer({ name, navItems, socials }: FooterProps) {
               </Link>
             ))}
           </div>
-          <p>
-            © {new Date().getFullYear()} {name}. All rights reserved.
-          </p>
+          <p>&copy; {new Date().getFullYear()} {name}. All rights reserved.</p>
         </div>
       </Container>
     </footer>

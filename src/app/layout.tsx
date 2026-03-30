@@ -26,7 +26,7 @@ export const metadata: Metadata = {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Freelance frontend engineer portfolio preview",
+        alt: "Bhavik Songara portfolio preview",
       },
     ],
   },

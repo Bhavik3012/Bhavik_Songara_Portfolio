@@ -5,7 +5,6 @@ import { ContactSection } from "@/components/sections/ContactSection";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { ProjectsSection } from "@/components/sections/ProjectsSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
-import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { portfolioData } from "@/data/portfolio";
 
 export default function Home() {
@@ -28,15 +27,18 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <Navbar items={portfolioData.navItems} />
+      <Navbar items={portfolioData.navItems} name={portfolioData.profile.name} />
 
       <main className="flex-1">
         <HeroSection profile={portfolioData.profile} />
         <AboutSection profile={portfolioData.profile} />
-        <ProjectsSection projects={portfolioData.projects} />
+        <ProjectsSection
+          projects={portfolioData.projects}
+          supportingLogos={portfolioData.supportingLogos}
+        />
         <ServicesSection services={portfolioData.services} />
-        <TestimonialsSection testimonials={portfolioData.testimonials} />
         <ContactSection
+          name={portfolioData.profile.name}
           contact={portfolioData.contact}
           socials={portfolioData.profile.socials}
         />

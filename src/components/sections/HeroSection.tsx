@@ -12,7 +12,11 @@ type HeroSectionProps = {
 
 export function HeroSection({ profile }: HeroSectionProps) {
   return (
-    <section id="top" className="relative overflow-hidden pt-8 sm:pt-12" aria-label="Introduction">
+    <section
+      id="top"
+      className="relative overflow-hidden pt-8 sm:pt-12"
+      aria-label="Introduction"
+    >
       <Container>
         <div className="grid gap-14 rounded-[2rem] border border-[var(--color-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(242,248,255,0.92))] px-6 py-8 shadow-[0_32px_80px_rgba(15,49,112,0.10)] sm:px-10 sm:py-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:px-12">
           <Reveal className="space-y-8">
@@ -33,7 +37,7 @@ export function HeroSection({ profile }: HeroSectionProps) {
             </div>
 
             <div className="flex flex-col gap-3 sm:flex-row">
-              <ButtonLink href="#contact">Hire Me</ButtonLink>
+              <ButtonLink href="#contact">Start a Project</ButtonLink>
               <ButtonLink href="#projects" variant="secondary">
                 View Projects
               </ButtonLink>
@@ -45,8 +49,12 @@ export function HeroSection({ profile }: HeroSectionProps) {
                   key={stat.label}
                   className="rounded-3xl border border-[var(--color-line)] bg-white/85 px-5 py-4"
                 >
-                  <p className="text-2xl font-semibold text-[var(--color-text)]">{stat.value}</p>
-                  <p className="mt-1 text-sm leading-6 text-[var(--color-muted)]">{stat.label}</p>
+                  <p className="text-2xl font-semibold text-[var(--color-text)]">
+                    {stat.value}
+                  </p>
+                  <p className="mt-1 text-sm leading-6 text-[var(--color-muted)]">
+                    {stat.label}
+                  </p>
                 </li>
               ))}
             </ul>
@@ -57,7 +65,7 @@ export function HeroSection({ profile }: HeroSectionProps) {
               <div className="absolute inset-0 translate-x-4 translate-y-6 rounded-[2rem] bg-[linear-gradient(135deg,rgba(16,88,255,0.16),rgba(125,180,255,0.26))] blur-2xl" />
               <div className="relative overflow-hidden rounded-[2rem] border border-[var(--color-line)] bg-white/88 p-5 shadow-[0_24px_60px_rgba(15,49,112,0.12)]">
                 <div className="absolute right-4 top-4 rounded-full border border-[var(--color-line)] bg-white/90 px-3 py-1 text-xs font-medium text-[var(--color-muted)]">
-                  Vercel-ready delivery
+                  Launch-Ready Solution
                 </div>
                 <div className="overflow-hidden rounded-[1.5rem] bg-[linear-gradient(180deg,#eaf3ff,#fdfefe)]">
                   <Image

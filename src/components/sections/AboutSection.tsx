@@ -16,18 +16,18 @@ export function AboutSection({ profile }: AboutSectionProps) {
           <Reveal className="space-y-8">
             <SectionHeading
               eyebrow="About"
-              title="A partner for teams that need thoughtful design and dependable frontend execution."
+              title="Building practical digital products with modern web and AI tools."
               description={profile.shortBio}
             />
 
             <div className="rounded-[1.75rem] border border-[var(--color-line)] bg-white/82 p-6 shadow-[0_20px_50px_rgba(15,49,112,0.08)]">
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--color-primary)]">
-                Why clients bring me in
+                Focus areas
               </p>
               <ul className="mt-5 space-y-4 text-sm leading-7 text-[var(--color-muted)]">
-                <li>Clear product and business context before pixels or code.</li>
-                <li>Experienced judgment on what to simplify, what to emphasize, and what to ship first.</li>
-                <li>Polished delivery without bloated dependencies or fragile handoff.</li>
+                <li>Frontend development for clean and responsive user experiences.</li>
+                <li>AI automations and chatbot workflows for practical business use.</li>
+                <li>Production-ready builds with maintainable code and modern tooling.</li>
               </ul>
             </div>
           </Reveal>
@@ -41,14 +41,14 @@ export function AboutSection({ profile }: AboutSectionProps) {
               ))}
               <div className="flex flex-wrap gap-3 border-t border-[var(--color-line)] pt-5 text-sm text-[var(--color-muted)]">
                 <span>{profile.location}</span>
-                <span className="text-[var(--color-line)]">•</span>
+                <span className="text-[var(--color-line)]">&bull;</span>
                 <a href={`mailto:${profile.email}`} className="transition hover:text-[var(--color-primary)]">
                   {profile.email}
                 </a>
               </div>
             </div>
 
-            <div className="grid gap-5 md:grid-cols-3">
+            <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
               {profile.skills.map((group, index) => (
                 <div
                   key={group.title}

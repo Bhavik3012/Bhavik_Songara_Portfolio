@@ -25,6 +25,8 @@ export type Project = {
   techStack: string[];
   href: string;
   linkLabel: string;
+  image?: string;
+  imageAlt?: string;
   featured?: boolean;
 };
 
@@ -35,6 +37,15 @@ export type Service = {
   description: string;
   bullets: string[];
   icon: ServiceIcon;
+  image?: string;
+  imageAlt?: string;
+};
+
+export type SupportingLogo = {
+  title: string;
+  image: string;
+  imageAlt: string;
+  description: string;
 };
 
 export type Testimonial = {
@@ -63,6 +74,7 @@ export type Profile = {
 };
 
 export type ContactDetails = {
+  phone: string;
   email: string;
   intro: string;
   responseTime: string;
@@ -80,6 +92,7 @@ export type PortfolioData = {
   profile: Profile;
   projects: Project[];
   services: Service[];
+  supportingLogos: SupportingLogo[];
   testimonials: Testimonial[];
   contact: ContactDetails;
 };

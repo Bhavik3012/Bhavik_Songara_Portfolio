@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 import { portfolioData } from "@/data/portfolio";
 
-export const alt = "Freelance frontend engineer portfolio preview";
+export const alt = "Bhavik Songara portfolio preview";
 export const size = {
   width: 1200,
   height: 630,
@@ -73,7 +73,7 @@ export default function OpenGraphImage() {
                 padding: "12px 20px",
               }}
             >
-              Freelance Frontend Engineer
+              {portfolioData.profile.name}
             </div>
             <div style={{ fontSize: "68px", lineHeight: 1.05, fontWeight: 700, maxWidth: "760px" }}>
               {portfolioData.profile.headline}
