@@ -35,7 +35,7 @@ export function ContactSection({
                 </p>
                 <a
                   href={`mailto:${contact.email}`}
-                  className="mt-3 inline-block text-lg font-semibold text-[var(--color-text)] transition hover:text-[var(--color-primary)]"
+                  className="mt-3 inline-block break-all text-base font-semibold text-[var(--color-text)] transition hover:text-[var(--color-primary)] sm:text-lg sm:break-normal"
                 >
                   {contact.email}
                 </a>
@@ -81,7 +81,7 @@ export function ContactSection({
                 </p>
                 <a
                   href={`tel:${contact.phone.replace(/\s+/g, "")}`}
-                  className="mt-2 inline-block text-lg font-semibold text-[var(--color-text)] transition hover:text-[var(--color-primary)]"
+                  className="mt-2 inline-block text-base font-semibold text-[var(--color-text)] transition hover:text-[var(--color-primary)] sm:text-lg"
                 >
                   {contact.phone}
                 </a>
@@ -93,7 +93,7 @@ export function ContactSection({
                 </p>
                 <a
                   href={`mailto:${contact.email}`}
-                  className="mt-2 inline-block text-lg font-semibold text-[var(--color-text)] transition hover:text-[var(--color-primary)]"
+                  className="mt-2 inline-block break-all text-base font-semibold text-[var(--color-text)] transition hover:text-[var(--color-primary)] sm:text-lg sm:break-normal"
                 >
                   {contact.email}
                 </a>

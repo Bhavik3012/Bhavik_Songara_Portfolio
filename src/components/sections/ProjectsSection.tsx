@@ -22,7 +22,7 @@ export function ProjectsSection({
           <SectionHeading
             eyebrow="Projects"
             title="Selected projects and live websites."
-            description="A few recent builds presented with stronger visual identity, clearer hierarchy, and direct access to the live work."
+            description="A few recent builds with clear branding and direct access to the live work."
           />
         </Reveal>
 
@@ -67,7 +67,7 @@ export function ProjectsSection({
                   </div>
 
                   <div className="mt-6 flex-1">
-                    <h3 className="text-2xl font-semibold tracking-tight text-[var(--color-text)]">
+                    <h3 className="text-xl font-semibold tracking-tight text-[var(--color-text)] sm:text-2xl">
                       {project.title}
                     </h3>
                     <p className="mt-4 text-sm leading-7 text-[var(--color-muted)]">

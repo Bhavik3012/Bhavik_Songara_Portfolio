@@ -16,7 +16,7 @@ export function AboutSection({ profile }: AboutSectionProps) {
           <Reveal className="space-y-8">
             <SectionHeading
               eyebrow="About"
-              title="Building practical digital products with modern web and AI tools."
+              title="Modern web and AI products, built to be useful."
               description={profile.shortBio}
             />
 
@@ -25,9 +25,9 @@ export function AboutSection({ profile }: AboutSectionProps) {
                 Focus areas
               </p>
               <ul className="mt-5 space-y-4 text-sm leading-7 text-[var(--color-muted)]">
-                <li>Frontend development for clean and responsive user experiences.</li>
-                <li>AI automations and chatbot workflows for practical business use.</li>
-                <li>Production-ready builds with maintainable code and modern tooling.</li>
+                <li>Responsive frontend development.</li>
+                <li>AI automations and chatbots.</li>
+                <li>Production-ready builds.</li>
               </ul>
             </div>
           </Reveal>
@@ -42,7 +42,7 @@ export function AboutSection({ profile }: AboutSectionProps) {
               <div className="flex flex-wrap gap-3 border-t border-[var(--color-line)] pt-5 text-sm text-[var(--color-muted)]">
                 <span>{profile.location}</span>
                 <span className="text-[var(--color-line)]">&bull;</span>
-                <a href={`mailto:${profile.email}`} className="transition hover:text-[var(--color-primary)]">
+                <a href={`mailto:${profile.email}`} className="break-all transition hover:text-[var(--color-primary)] sm:break-normal">
                   {profile.email}
                 </a>
               </div>

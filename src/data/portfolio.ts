@@ -6,7 +6,7 @@ export const portfolioData: PortfolioData = {
   seo: {
     title: "Bhavik Songara | AI Automation & Web Developer",
     description:
-      "Bhavik Songara builds AI-powered automation systems, modern websites, and scalable digital products focused on speed, usability, and real business impact.",
+      "Bhavik Songara builds AI automation systems, websites, and digital products.",
     keywords: [
       "Bhavik Songara",
       "AI automation developer",
@@ -31,13 +31,13 @@ export const portfolioData: PortfolioData = {
     image: "/images/profile-placeholder.png",
     imageAlt: "Portrait of Bhavik Songara",
     headline:
-      "I build AI-powered websites and automation systems that save time and generate revenue.",
+      "I build AI websites and automation systems that save time.",
     subheadline:
-      "Helping startups and businesses launch faster with scalable web apps, chatbots, and smart workflows.",
+      "Web apps, chatbots, and smart workflows for startups and businesses.",
     trustHighlights: [
-      "AI-driven solutions",
-      "Scalable web systems",
-      "Production-ready builds",
+      "AI automation",
+      "Web products",
+      "Launch-ready builds",
     ],
     stats: [
       { value: "2+", label: "Years Experience" },
@@ -45,11 +45,11 @@ export const portfolioData: PortfolioData = {
       { value: "100%", label: "Client Satisfaction" },
     ],
     about: [
-      "I build websites, applications, and AI systems that solve real business problems and improve efficiency.",
-      "My focus is on clean execution, smart automation, and fast, scalable products that deliver practical value.",
+      "I build websites, apps, and AI systems that solve practical business problems.",
+      "My focus is clean execution, smart automation, and scalable digital products.",
     ],
     shortBio:
-      "Focused on building AI automation systems and modern web products that are fast, practical, and built for real-world use.",
+      "Focused on AI automation and modern web products built for real use.",
     skills: [
       {
         title: "AI & ML",
@@ -89,9 +89,9 @@ export const portfolioData: PortfolioData = {
     {
       title: "E-Cell IIIT Surat Website",
       description:
-        "Official website for the entrepreneurship cell, designed with a modern interface and clear structure to showcase events and initiatives.",
+        "Official website for the entrepreneurship cell with a clear, modern interface.",
       outcome:
-        "Delivered a professional digital presence that improved visibility and engagement for the E-Cell community.",
+        "Built a stronger digital presence for the E-Cell community.",
       techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
       href: "https://ecelliiitsurat.in/",
       linkLabel: "View project",
@@ -102,9 +102,9 @@ export const portfolioData: PortfolioData = {
     {
       title: "Pop101 Website",
       description:
-        "Restaurant website designed to showcase the brand clearly with responsive layouts and polished frontend presentation.",
+        "Restaurant website with polished UI and responsive layouts.",
       outcome:
-        "Delivered a modern website experience with clean UI and strong responsiveness.",
+        "Delivered a clean, modern, responsive website.",
       techStack: ["React", "Next.js", "Tailwind CSS", "Responsive UI"],
       href: "https://pop101.com.au/",
       linkLabel: "Visit website",
@@ -115,9 +115,9 @@ export const portfolioData: PortfolioData = {
     {
       title: "Truth Tunnel Website",
       description:
-        "A clean and immersive web experience focused on storytelling, layout clarity, and smooth interaction design.",
+        "An immersive website focused on storytelling and clean interaction design.",
       outcome:
-        "Built a fast, visually refined website with a strong modern presentation.",
+        "Built a fast website with a refined visual presentation.",
       techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
       href: "https://truth-tunnel.vercel.app/",
       linkLabel: "Open website",
@@ -129,7 +129,7 @@ export const portfolioData: PortfolioData = {
     {
       title: "WhatsApp Chatbot Development",
       description:
-        "Custom chatbot solutions built to automate conversations, support workflows, and improve response time.",
+        "Custom chatbots that automate replies and support workflows.",
       bullets: [
         "Lead capture",
         "Automated replies",
@@ -142,7 +142,7 @@ export const portfolioData: PortfolioData = {
     {
       title: "AI Automation Workflows",
       description:
-        "AI-powered workflows that reduce manual effort and connect tools into efficient systems.",
+        "AI workflows that reduce manual work and connect tools.",
       bullets: ["OpenAI integrations", "Prompt workflows", "Task automation"],
       icon: "engineering",
       image: "/images/ai logo.png",
@@ -151,7 +151,7 @@ export const portfolioData: PortfolioData = {
     {
       title: "Website Development",
       description:
-        "Modern responsive websites built with clean code, strong UI, and production-ready deployment.",
+        "Modern responsive websites built with clean code and strong UI.",
       bullets: [
         "Responsive design",
         "Next.js development",
@@ -164,7 +164,7 @@ export const portfolioData: PortfolioData = {
     {
       title: "Application Development",
       description:
-        "Web applications designed for real use cases with scalable frontend and backend architecture.",
+        "Web applications built for real use cases with scalable architecture.",
       bullets: [
         "Frontend and backend integration",
         "REST APIs",
@@ -180,7 +180,7 @@ export const portfolioData: PortfolioData = {
       title: "Additional Work",
       image: "/images/ruminate.png",
       imageAlt: "Ruminate brand logo",
-      description: "Selected brand and product work included as part of the portfolio visual system.",
+      description: "Additional product and brand work.",
     },
   ],
   testimonials: [
@@ -210,7 +210,7 @@ export const portfolioData: PortfolioData = {
     phone: "+91 7048748363",
     email: "bhaviksongara301205@gmail.com",
     intro:
-      "If you want to build a website, app, or AI-powered workflow, feel free to reach out.",
+      "Need a website, app, or AI workflow? Let’s talk.",
     responseTime: "Usually replies within 1 business day",
     subjectPrefix: "New portfolio inquiry",
   },

@@ -17,7 +17,7 @@ export function ServicesSection({ services }: ServicesSectionProps) {
           <SectionHeading
             eyebrow="Services"
             title="Services focused on useful products and real-world delivery."
-            description="Each offering is presented with a stronger visual identity while keeping the layout clean, modern, and easy to scan."
+            description="Logo-led service cards that stay clean, modern, and easy to scan."
           />
         </Reveal>
 
@@ -39,7 +39,7 @@ export function ServicesSection({ services }: ServicesSectionProps) {
                   </div>
 
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold text-[var(--color-text)]">
+                    <h3 className="text-lg font-semibold text-[var(--color-text)] sm:text-xl">
                       {service.title}
                     </h3>
                     <p className="mt-3 text-sm leading-7 text-[var(--color-muted)]">
